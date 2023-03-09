@@ -10,7 +10,19 @@ while (count <= number)
 {
   if (count % 2 == 0)
   {
-  Console.Write($"{count} ");
+    Console.Write($"{count} ");
   }
   count++;
 }
+if (number == 0)
+{
+  Console.WriteLine("На вашем пути не встретилось четных чисел :( )");
+}
+if (number == 1)
+{
+  Console.WriteLine("На вашем пути не встретилось четных чисел :( )");
+}
+
+
+
+
