@@ -6,14 +6,6 @@
 Console.Write("Введите число:");
 int number = Convert.ToInt32(Console.ReadLine());
 int count = 2;
-while (count <= number)
-{
-  if (count % 2 == 0)
-  {
-    Console.Write($"{count} ");
-  }
-  count++; 
-}
 // Код на данном этапе уже работает, но чтобы исключить варианты ввода чисел (0,1) введем команды ниже.
 // Насчет числа 0 не уверен, нужно ли его вообще упоминать
 if (number == 0)
@@ -23,6 +15,14 @@ if (number == 0)
 if (number == 1)
 {
   Console.WriteLine("На вашем пути не встретилось четных чисел :( ");
+}
+while (count <= number)
+{
+  if (count % 2 == 0)
+  {
+    Console.Write($"{count} ");
+  }
+  count++; 
 }
 
 
