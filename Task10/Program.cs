@@ -8,6 +8,7 @@ Console.Clear();
 Console.WriteLine("Введите трёхзначное число:");
 int number = Convert.ToInt32(Console.ReadLine());
 
+if (number < 0) number = -number;
 if (number >= 100 && number <= 999)
 {
   int total = SecondDigit(number);
