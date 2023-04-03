@@ -17,10 +17,10 @@ double[] averageValues = GetAverageColumnValues(matrix);
 
 for (int i = 0; i < averageValues.Length; i++)
 {
-    Console.WriteLine($"Среднеарифметическое столбца {i + 1}: {averageValues[i]}");
+  Console.WriteLine($"Среднеарифметическое столбца {i + 1}: {averageValues[i]}");
 }
 
- double[] GetAverageColumnValues(int[,] matrix)
+double[] GetAverageColumnValues(int[,] matrix)
 {
   int rows = matrix.GetLength(0);
   int columns = matrix.GetLength(1);
@@ -61,7 +61,7 @@ void PrintMatrix(int[,] matrix)
     Console.Write("|");
     for (int j = 0; j < matrix.GetLength(1); j++)
     {
-      Console.Write($"{matrix[i, j], 5} ");
+      Console.Write($"{matrix[i, j],5} ");
     }
     Console.WriteLine("|");
   }
