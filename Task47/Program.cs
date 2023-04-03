@@ -13,9 +13,8 @@ Console.Clear();
 double[,] array2d = CreateMatrixRndDoub(3, 4, -10, 10);
 PrintMatrix(array2d);
 
-
 double[,] CreateMatrixRndDoub(int rows, int columns, double min, double max)
-{                          
+{
   double[,] matrix = new double[rows, columns];
   Random rnd = new Random();
   for (int i = 0; i < matrix.GetLength(0); i++)
@@ -24,7 +23,6 @@ double[,] CreateMatrixRndDoub(int rows, int columns, double min, double max)
     {
       matrix[i, j] = rnd.NextDouble() * (max - min) + min;
     }
-
   }
   return matrix;
 }
