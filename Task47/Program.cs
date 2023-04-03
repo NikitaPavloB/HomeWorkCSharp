@@ -37,7 +37,7 @@ void PrintMatrix(double[,] matrix)
     for (int j = 0; j < matrix.GetLength(1); j++)
     {
       double roundedValue = Math.Round(matrix[i, j], 1);
-      Console.Write($"{roundedValue,4} ");
+      Console.Write($"{roundedValue,5} ");
     }
     Console.WriteLine("|");
   }
