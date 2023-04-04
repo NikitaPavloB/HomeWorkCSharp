@@ -4,8 +4,6 @@
 // 12 13 14 05
 // 11 16 15 06
 // 10 09 08 07
-
-
 Console.Clear();
 
 int[,] matrix = new int[4, 4];
