@@ -10,10 +10,11 @@
 Console.Clear();
 
 int[,] matrix = CreateMatrixRndInt(4, 4, 0, 10);
+Console.WriteLine("Матрица:\n ");
 PrintMatrix(matrix);
 
 int minRow = FindRowWithMinSum(matrix);
-Console.WriteLine($"Строка с наименьшей суммой элементов: {minRow + 1}");
+Console.WriteLine($"\nСтрока с наименьшей суммой элементов: {minRow + 1}");
 
 int FindRowWithMinSum(int[,] matrix)
 {
