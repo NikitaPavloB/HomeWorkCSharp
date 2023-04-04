@@ -11,11 +11,11 @@ Console.Clear();
 int[,] matrixA = CreateMatrix(4, 4, 0, 10);
 int[,] matrixB = CreateMatrix(4, 4, 0, 10);
 
-Console.WriteLine("Первая матрица:");
+Console.WriteLine("Первая матрица:\n");
 PrintMatrix(matrixA);
 Console.WriteLine();
 
-Console.WriteLine("Вторая матрица:");
+Console.WriteLine("Вторая матрица:\n");
 PrintMatrix(matrixB);
 Console.WriteLine();
 
@@ -27,7 +27,7 @@ if (!CheckSize(matrixA, matrixB))
 
 int[,] productMatrix = ProductMatrices(matrixA, matrixB);
 
-Console.WriteLine("Произведение матриц:");
+Console.WriteLine("Произведение матриц:\n");
 PrintMatrix(productMatrix);
 
 static bool CheckSize(int[,] matrixA, int[,] matrixB)
