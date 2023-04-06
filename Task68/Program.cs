@@ -4,8 +4,8 @@
 // m = 3, n = 2 -> A(m,n) = 29
 Console.Clear();
 
-int NumberM = ReadPositiveInteger("Введите целое положительное число M: ");
-int NumberN = ReadPositiveInteger("Введите целое положительное число N: ");
+int NumberM = ReadPositiveInteger("Введите целое неотрецательное число M: ");
+int NumberN = ReadPositiveInteger("Введите целое неотрецательное число N: ");
 
 int result = AckermannFunction(NumberM, NumberN, 0);
 Console.WriteLine($"\nРезультат функции Аккермана для чисел {NumberM} и {NumberN}: {result}");
@@ -28,14 +28,14 @@ int AckermannFunction(int m, int n, int result = 0)
   }
 }
 
-// метод для чтения положительного целого числа
+// метод для чтения неотрецательным целого числа
 int ReadPositiveInteger(string message)
 {
   while (true)
   {
     Console.Write(message);
-    // проверяем, что введенное значение является целым положительным числом
-    if (int.TryParse(Console.ReadLine(), out int result) && result > 0)
+    // проверяем, что введенное значение является целым неотрецательным числом
+    if (int.TryParse(Console.ReadLine(), out int result) && result >= 0)
     {
       // Число 25 было вычесленно методом подбора. После него программа уже долго вычисляет результат.
       // Если в коде не нужны "магические цифры", то можно убрать из кода 5 строчек ниже.
@@ -46,6 +46,6 @@ int ReadPositiveInteger(string message)
       }
       return result;
     }
-    Console.WriteLine("Ошибка! Введите положительное целое число.\n");
+    Console.WriteLine("Ошибка! Введите целое неотрецательное число.\n");
   }
 }
